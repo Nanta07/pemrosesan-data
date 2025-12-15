@@ -1,0 +1,58 @@
+# Submission Project: Fundamental Pemrosesan Data - ETL Pipeline (Ananta Boemi Adji)
+
+## Deskripsi Singkat
+Proyek ini membangun pipeline ETL (Extract-Transform-Load) untuk mengambil data produk fashion dari situs  
+[https://fashion-studio.dicoding.dev](https://fashion-studio.dicoding.dev), melakukan transformasi data agar bersih dan terstruktur,  
+lalu menyimpannya ke dalam file CSV dan Google Sheets.
+
+---
+
+## Dependensi
+Semua dependensi tersedia di file `requirements.txt`, antara lain:
+- pandas
+- requests
+- beautifulsoup4
+- gspread
+- oauth2client
+- sqlalchemy
+- pytest
+- coverage
+
+Install semua dependensi dengan perintah:
+pip install -r requirements.txt
+
+
+---
+
+## Cara Menjalankan
+
+### 1. Menjalankan ETL Pipeline
+Pastikan kamu berada di folder root proyek (`submission-pemda-Ananta`), lalu jalankan:
+python main.py
+
+
+### 2. Menjalankan Unit Test
+Pastikan variabel lingkungan PYTHONPATH sudah diset agar modul bisa dikenali.
+
+**PowerShell (Windows):**
+```powershell
+$env:PYTHONPATH="."
+python -m pytest tests
+
+CMD (Windows):
+set PYTHONPATH=.
+python -m pytest tests
+
+### 3. Menjalankan Unit Test
+PowerShell (Windows):
+$env:PYTHONPATH="."
+coverage run -m pytest tests
+coverage report -m
+
+CMD (Windows):
+set PYTHONPATH=.
+coverage run -m pytest tests
+coverage report -m
+
+URL Google Sheets
+https://docs.google.com/spreadsheets/d/1bOqFt8WCZXMogKSAggAIJO1_46g2l-NIZA17jewQVCg/edit?gid=0
